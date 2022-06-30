@@ -4,6 +4,7 @@ public class Student {
     public double gradePointAverage;
     public boolean alive;
 
+    //  default constructor (with no params/args)
     public Student() {
         name = "no name";
         age = 16;
@@ -11,6 +12,7 @@ public class Student {
         alive = true;
     }
 
+    //    full constructor with params/args
     public Student(String n, int a, double m, boolean al) {
         name = n;
         age = a;
@@ -18,20 +20,14 @@ public class Student {
         alive = al;
     }
 
-    public Student(String n) {
-        name = n;
-    }
+    //    copy-constructor
+    public Student(Student student) {
+        name = student.name;
+        age = student.age;
+        gradePointAverage = student.gradePointAverage;
+        alive = student.alive;
 
-    public Student(String n, double m) {
-        name = n;
-        gradePointAverage = m;
     }
-
-    public Student(double m, String n) {
-        gradePointAverage = m;
-        name = n;
-    }
-
 
     public String getInformation() {
         return name + ":\nAge = " + age
