@@ -11,6 +11,13 @@ public class Student {
         alive = true;
     }
 
+    public Student(String n, int a, double m, boolean al){
+        name = n;
+        age = a;
+        gradePointAverage = m;
+        alive = al;
+    }
+
     public String getInformation() {
         return name + ":\nAge = " + age
                 + "\nGPA = " + gradePointAverage
