@@ -13,11 +13,11 @@ public class Student {
     }
 
     //    full constructor with params/args
-    public Student(String n, int a, double m, boolean al) {
-        name = n;
-        age = a;
-        gradePointAverage = m;
-        alive = al;
+    public Student(String name, int age, double gradePointAverage, boolean alive) {
+        this.name = name;
+        this.age = age;
+        this.gradePointAverage = gradePointAverage;
+        this.alive = alive;
     }
 
     //    copy-constructor
